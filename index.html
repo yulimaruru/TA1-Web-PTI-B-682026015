@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yuli Maruru | Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="progress"></div>
+
+    <header>
+      <nav>
+        <a class="logo" href="#hero">Yuli Maruru</a>
+        <div class="links">
+          <a href="#tentang">Tentang</a><a href="#keahlian">Keahlian</a
+          ><a href="#proyek">Proyek</a> <a href="#perjalanan">Perjalanan</a
+          ><a href="#sertifikat">Sertifikat</a
+          ><a href="#self-development">Self Development</a
+          ><a href="#kontak">Hubungi</a>
+        </div>
+        <div class="tools" role="group" aria-label="Pilih warna tema">
+          <button
+            class="dot"
+            data-accent="pink"
+            style="background: #e0189b"
+            aria-label="Warna pink"
+            aria-pressed="true"
+          ></button>
+          <button
+            class="dot"
+            data-accent="merah"
+            style="background: #2600ff"
+            aria-label="Warna merah"
+            aria-pressed="false"
+          ></button>
+          <button id="mode" aria-pressed="false">Gelap</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero">
+        <p class="hi">Halo, saya</p>
+        <div class="nama-row">
+          <h1 id="nama">Yuli Maruru</h1>
+        </div>
+        <p class="role"><span id="typed"></span></p>
+        <p class="sub">
+          Mahasiswa Sistem Informasi yang suka mengubah ide menjadi tampilan dan
+          aplikasi sederhana. Masih belajar, terus bertumbuh.
+        </p>
+        <!-- Alamat Instagram,Tiktok,GitHub, dan email diatur di script.js (bagian LINKS) -->
+        <div class="social" aria-label="Media sosial">
+          <a
+            id="lnk-ig"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            title="Instagram"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a
+            id="lnk-tt"
+            href="https://www.tiktok.com/@yuy_i2?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+            title="TikTok"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              style="fill: currentColor; stroke: none"
+            >
+              <path
+                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+              />
+            </svg>
+          </a>
+          <a
+            id="lnk-gh"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              />
+            </svg>
+          </a>
+          <a
+            id="lnk-mail"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=maruruyuli@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Kirim Email"
+            title="Kirim Email"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+        <div class="cta">
+          <a class="btn main" href="#proyek">Lihat proyek saya</a>
+          <a class="btn" href="#kontak">Hubungi saya</a>
+        </div>
+        <div class="foto-profil-kanan">
+          <img src="img/foto-yuli.jpg" alt="Foto profil Yuli Maruru" />
+        </div>
+      </section>
+
+      <!-- TENTANG -->
+      <section id="tentang">
+        <h2>Tentang saya</h2>
+        <p class="lead">Masih belajar, terus bertumbuh.</p>
+        <dl class="facts">
+          <div>
+            <dt>Nama lengkap</dt>
+            <dd>Yuli Maruru</dd>
+          </div>
+          <div>
+            <dt>Program studi</dt>
+            <dd>S1 Sistem Informasi</dd>
+          </div>
+          <div>
+            <dt>Fakultas</dt>
+            <dd>Fakultas Teknologi Informasi</dd>
+          </div>
+          <div>
+            <dt>Universitas</dt>
+            <dd>Universitas Kristen Satya Wacana</dd>
+          </div>
+          <div>
+            <dt>Angkatan</dt>
+            <dd>2026</dd>
+          </div>
+        </dl>
+        <div class="about">
+          <p>
+            Saya adalah mahasiswa yang tertarik pada dunia teknologi informasi,
+            khususnya pembuatan website, desain antarmuka, dan pemrograman.
+          </p>
+          <p>
+            Melalui perkuliahan dan tugas praktikum, saya mulai mengenal
+            bagaimana sebuah ide dapat dikembangkan menjadi tampilan dan
+            aplikasi sederhana. Saya senang mencoba hal baru, mempelajari tools
+            digital, serta memperbaiki hasil pekerjaan dari setiap proses yang
+            saya jalani.
+          </p>
+          <p>
+            Saat ini saya sedang memperdalam dasar pengembangan web dan
+            pemrograman agar dapat membuat karya digital yang bermanfaat dan
+            mudah digunakan.
+          </p>
+        </div>
+      </section>
+
+      <!-- KEAHLIAN -->
+      <section id="keahlian">
+        <h2>Keahlian</h2>
+        <p class="lead">
+          Kemampuan yang sudah saya kenal dan terus saya kembangkan melalui
+          latihan serta proyek. Klik salah satu untuk melihat detailnya.
+        </p>
+        <div class="chips" id="chips"></div>
+        <div id="skill-detail" aria-live="polite"></div>
+      </section>
+
+      <!-- 
+<!-- ================= PROJECT SHOWCASE ================= -->
+      <section id="proyek" class="project-gallery">
+        <div class="project-heading">
+          <h2>Galeri Proyek & Karya Pribadi</h2>
+          <p>Beberapa karya dan proyek yang telah saya kerjakan.</p>
+        </div>
+
+        <div class="row project-grid">
+          <!-- PROYEK 1: FIGMA -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <img
+                src="img/figma-planthouse.png"
+                class="card-img-top project-image"
+                alt="Desain Figma Plant House"
+              />
+
+              <div class="card-body">
+                <span class="project-category"> UI/UX Design </span>
+
+                <h3 class="card-title">Desain UI/UX Website Plant House</h3>
+
+                <p class="card-text">
+                  Perancangan desain antarmuka website toko tanaman hias online
+                  menggunakan Figma. Proyek ini mencakup tampilan landing page,
+                  pilihan tanaman, informasi produk, dan proses pemesanan.
+                </p>
+
+                <div class="project-tech">
+                  <span>Figma</span>
+                  <span>UI Design</span>
+                  <span>UX Design</span>
+                  <span>Prototype</span>
+                </div>
+
+                <a
+                  href="https://www.figma.com/proto/Tqz4jahpCmPfaDah38LrAi/Untitled?page-id=0%3A1&node-id=2-2&viewport=-16%2C98%2C0.61&t=ECR6K28swW8i1XLB-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-button"
+                >
+                  Lihat Prototype
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROYEK 2: ANALISIS SENTIMEN -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <img
+                src="img/sentiment-analysis.png"
+                class="card-img-top project-image"
+                alt="Notebook Analisis Sentimen"
+              />
+
+              <div class="card-body">
+                <span class="project-category"> Data Analysis </span>
+
+                <h3 class="card-title">
+                  Pengumpulan Data untuk Analisis Sentimen YouTube
+                </h3>
+
+                <p class="card-text">
+                  Proyek pengumpulan data komentar dari 10 video YouTube
+                  menggunakan Python dan YouTube Data API. Data diolah
+                  menggunakan Pandas sebagai persiapan analisis sentimen.
+                </p>
+
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>Google Colab</span>
+                  <span>Pandas</span>
+                  <span>YouTube API</span>
+                </div>
+
+                <a
+                  href="https://colab.research.google.com/drive/1FlVhuM3xe42Xzfz1fX_UMd9X0vx4dgjY?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-button"
+                >
+                  Lihat Notebook
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROYEK 3: MAKALAH -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <img
+                src="img/makalah-media-sosial.png"
+                class="card-img-top project-image"
+                alt="Makalah Media Sosial"
+              />
+
+              <div class="card-body">
+                <span class="project-category"> Research & Writing </span>
+
+                <h3 class="card-title">
+                  Makalah Media Sosial dan Kegiatan Belajar Mahasiswa
+                </h3>
+
+                <p class="card-text">
+                  Makalah studi literatur yang membahas hubungan penggunaan
+                  media sosial dengan kegiatan belajar mahasiswa, termasuk
+                  dampaknya terhadap konsentrasi dan prestasi akademik.
+                </p>
+
+                <div class="project-tech">
+                  <span>Microsoft Word</span>
+                  <span>Research</span>
+                  <span>Studi Literatur</span>
+                </div>
+
+                <a
+                  href="dokumen/makalah-media-sosial.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-button"
+                >
+                  Lihat Makalah PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== END PROJECT SHOWCASE =============== -->
+
+      <!-- CREATIVE CHALLENGE: PERJALANAN SAYA -->
+      <section id="perjalanan" class="journey-section">
+        <div class="container">
+          <div class="section-heading text-center">
+            <span class="section-label">MY JOURNEY</span>
+            <h2>Perjalanan <span>Belajar Saya</span></h2>
+            <p>
+              Setiap pengalaman adalah proses untuk menjadi pribadi yang lebih
+              baik dan terus berkembang.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <!-- 2022 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2022</span>
+                <h4>Jambore Nasional V SMGT</h4>
+                <p>
+                  Mengikuti kegiatan Jambore Nasional dan mendapatkan pengalaman
+                  dalam kerja sama, kedisiplinan, serta kebersamaan.
+                </p>
+                <span class="timeline-tag">Organisasi</span>
+              </div>
+            </div>
+
+            <!-- 2024-2025 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2024 - 2025</span>
+                <h4>Anggota OSIS</h4>
+                <p>
+                  Melatih kepemimpinan dalam berorganisasi, meningkatkan
+                  kepedulian, dan belajar bertanggung jawab terhadap tugas.
+                </p>
+                <span class="timeline-tag">Kepemimpinan</span>
+              </div>
+            </div>
+
+            <!-- 2025-2026 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2025 - 2026</span>
+                <h4>Pengurus PPGT</h4>
+                <p>
+                  Belajar berorganisasi, membangun hubungan sosial, serta
+                  mengembangkan kemampuan bekerja sama dalam sebuah komunitas.
+                </p>
+                <span class="timeline-tag">Pengembangan Diri</span>
+              </div>
+            </div>
+
+            <!-- 2026 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2026 - Sekarang</span>
+                <h4>Mahasiswa Sistem Informasi</h4>
+                <p>
+                  Memulai perjalanan kuliah di Universitas Kristen Satya Wacana.
+                  Mulai mempelajari pemrograman, desain UI/UX, dan pengembangan
+                  website.
+                </p>
+                <span class="timeline-tag">Pendidikan</span>
+              </div>
+            </div>
+
+            <!-- TARGET -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card timeline-future">
+                <span class="timeline-year">NEXT GOAL</span>
+                <h4>Menjadi Lebih Berkembang</h4>
+                <p>
+                  Terus meningkatkan kemampuan di bidang teknologi informasi dan
+                  menciptakan karya digital yang bermanfaat.
+                </p>
+                <span class="timeline-tag">Target Masa Depan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PERJALANAN -->
+      <section id="perjalanan">
+        <h2>Perjalanan saya</h2>
+        <p class="lead">Pendidikan dan pengalaman berorganisasi.</p>
+        <div class="filter" id="filter">
+          <button class="chip" data-f="all" aria-pressed="true">Semua</button>
+          <button class="chip" data-f="pendidikan" aria-pressed="false">
+            Pendidikan
+          </button>
+          <button class="chip" data-f="pengalaman" aria-pressed="false">
+            Pengalaman
+          </button>
+        </div>
+        <ol class="tl">
+          <li data-t="pendidikan">
+            <span class="yr">2026 - sekarang</span>
+            <h3>S1 Sistem Informasi</h3>
+            <p>
+              Universitas Kristen Satya Wacana. Berfokus pada analisis sistem,
+              manajemen basis data, proses bisnis, pemrograman, dan perancangan
+              sistem informasi.
+            </p>
+          </li>
+          <li data-t="pengalaman">
+            <span class="yr">2025 - 2026</span>
+            <h3>Pengurus PPGT</h3>
+            <p>Terlibat dalam kepengurusan dan kerja sama tim organisasi.</p>
+          </li>
+          <li data-t="pengalaman">
+            <span class="yr">2024 - 2025</span>
+            <h3>Anggota OSIS</h3>
+            <p>
+              Melatih kepemimpinan dalam berorganisasi, meningkatkan kepedulian
+              dan tanggung jawab.
+            </p>
+          </li>
+          <li data-t="pendidikan">
+            <span class="yr">2023 - 2026</span>
+            <h3>SMA Negeri 4 Luwu, Jurusan Teknik</h3>
+            <p>
+              Mempelajari Matematika, Fisika, dan Geografi sebagai fondasi
+              logika pemecahan masalah serta analisis spasial sebelum
+              melanjutkan ke bidang Sistem Informasi.
+            </p>
+          </li>
+          <li data-t="pengalaman">
+            <span class="yr">2022</span>
+            <h3>Jambore Nasional V SMGT</h3>
+            <p>
+              Memahami dan terlibat dalam misi Allah, menumbuhkan kepedulian
+              sosial, membangun persekutuan, dan kaderisasi.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- SERTIFIKAT -->
+      <section id="sertifikat">
+        <h2>Sertifikasi dan penghargaan</h2>
+        <p class="lead">&nbsp;</p>
+        <div class="certs">
+          <div class="cert">
+            <b>Gemini Certified University Student</b><span>November 2026</span>
+          </div>
+          <div class="cert">
+            <b>Jambore Nasional V SMGT</b><span>Juli 2022</span>
+          </div>
+          <div class="cert">
+            <b>Gerakan Cinta Alkitab</b><span>April 2025</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELF DEVELOPMENT SECTION -->
+      <section id="self-development" class="self-development">
+        <div class="self-container">
+          <div class="self-heading">
+            <span class="self-label">🌱 PERSONAL GROWTH</span>
+            <h2>My Growth Journey</h2>
+            <p>Terus Belajar, Terus Bertumbuh</p>
+          </div>
+
+          <div class="self-intro">
+            Saya percaya bahwa setiap proses adalah kesempatan untuk berkembang.
+            Saya senang mempelajari hal-hal baru, mencoba pengalaman berbeda,
+            serta meningkatkan kemampuan diri, baik dalam bidang teknologi
+            maupun kehidupan sehari-hari. Bagi saya, belajar bukan hanya tentang
+            mendapatkan pengetahuan, tetapi juga tentang menjadi pribadi yang
+            lebih baik setiap harinya.
+          </div>
+
+          <div class="self-cards">
+            <div class="self-card">
+              <div class="self-icon">🌱</div>
+              <h3>Continuous Learning</h3>
+              <p>
+                Selalu terbuka untuk mempelajari ilmu, keterampilan, dan
+                teknologi baru.
+              </p>
+            </div>
+
+            <div class="self-card">
+              <div class="self-icon">💻</div>
+              <h3>Technology Exploration</h3>
+              <p>
+                Senang mengeksplorasi dunia teknologi, khususnya pengembangan
+                website dan aplikasi.
+              </p>
+            </div>
+
+            <div class="self-card">
+              <div class="self-icon">🎯</div>
+              <h3>Personal Growth</h3>
+              <p>
+                Berusaha meningkatkan kemampuan, kedisiplinan, dan rasa percaya
+                diri.
+              </p>
+            </div>
+
+            <div class="self-card">
+              <div class="self-icon">✨</div>
+              <h3>New Experiences</h3>
+              <p>
+                Berani mencoba hal baru dan menjadikan setiap pengalaman sebagai
+                pembelajaran.
+              </p>
+            </div>
+          </div>
+
+          <div class="self-quote">
+            "Small steps every day lead to big changes."
+            <span>— Keep Learning, Keep Growing 🌷</span>
+          </div>
+        </div>
+      </section>
+      <!-- END SELF DEVELOPMENT -->
+
+      <!-- HUBUNGI SAYA -->
+      <section id="kontak">
+        <h2>Hubungi saya</h2>
+        <p class="lead">
+          Isi formulir di bawah ini, lalu pesanmu akan siap dikirim lewat email.
+        </p>
+        <form id="form">
+          <label for="f-nama">Nama</label>
+          <input id="f-nama" placeholder="Nama kamu" required />
+          <label for="f-email">Email</label>
+          <input
+            id="f-email"
+            type="email"
+            placeholder="email@contoh.com"
+            required
+          />
+          <label for="f-perlu">Keperluan</label>
+          <select id="f-perlu" required>
+            <option value="" disabled selected>Pilih keperluan</option>
+            <option>Bekerja sama</option>
+            <option>Berteman</option>
+            <option>Lainnya</option>
+          </select>
+          <label for="f-pesan">Pesan</label>
+          <textarea
+            id="f-pesan"
+            rows="5"
+            placeholder="Tulis pesan kamu di sini"
+            required
+          ></textarea>
+          <button class="btn main" type="submit">Kirim</button>
+          <p id="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 Yuli Maruru. Dibuat dengan HTML, CSS, dan JavaScript.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
